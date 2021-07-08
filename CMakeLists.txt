@@ -9,7 +9,7 @@ cmake_minimum_required(VERSION 3.2)
 include(GNUInstallDirs)
 include(cmake/utils.cmake)
 include(cmake/ide.cmake)
-
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fpic")
 spdlog_extract_version()
 
 #---------------------------------------------------------------------------------------
